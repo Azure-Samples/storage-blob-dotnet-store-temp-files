@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<a href="/AzureBlob/CreateTempFile"><h1>Upload New File</h1></a>
+
+<h1>BlobFiles</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Uri</th>
+            <th>LastModified</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.blobs)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Uri</td>
+                <td>@item.Properties.LastModified</td>
+            </tr>
+        }
+    </tbody>
+</table>

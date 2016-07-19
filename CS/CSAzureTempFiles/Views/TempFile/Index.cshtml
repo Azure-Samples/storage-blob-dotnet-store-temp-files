@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<a href="/TempFile/CreateTempFile"><h1>Upload New File</h1></a>
+
+<h1>tempFiles</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Uri</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.Files)
+        {
+            <tr>
+                <td>@item</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
