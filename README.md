@@ -26,6 +26,7 @@ We have two solutions：
 ## Running the Sample
 You can upload the sample to your Azure storage, or run at your local IIS, or just debug it in your Visual Studio.
 Using the Code
+
 Solution1:
 ```cs
 private void SaveTempFile(HttpPostedFileBase file)
