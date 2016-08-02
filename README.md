@@ -21,8 +21,10 @@ We have two solutions：
 2. Restore nugget packages in the solution 
 ![restore-nuget-package](images/restore-nuget-package.png)
 3.	Copy account name, access key and address of your azure storage account.
+![get-access-keys](images/get-access-keys.png)
+![get-container-url](images/get-container-url.png)
 4.	Configure necessary parameters about account name, key and address in the solution in file Controllers\AzureBlobController.cs
- 
+![config-AzureBlobController](images/config-AzureBlobController.png)
 ## Running the Sample
 You can upload the sample to your Azure storage, or run at your local IIS, or just debug it in your Visual Studio.
 Using the Code
