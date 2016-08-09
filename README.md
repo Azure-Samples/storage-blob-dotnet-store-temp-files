@@ -1,7 +1,7 @@
 ---
 services: blobs
 platforms: c#
-author: zhang kun
+author: msonecode
 ---
 
 # Store temp files by Azure Blob storage on Azure applications
