@@ -13,8 +13,8 @@ This sample demonstrates how to store temp file in Azure applications.
 
 We have two solutions： 
 
-1. First one is traditional way to call ‘Path.GetTempPath()’ to store temp file in all windows platform 
-2. The other is azure specific way to use blob object in Azure to simulate temp file.  
+1. First one is the traditional way of calling ‘Path.GetTempPath()’ to store temp file in all windows platform. 
+2. The other one is specific for Azure by using blob object in Azure to simulate temp file.  
 
 ## Building the Sample
 1. Double click CSAzureTempFiles.sln file to open this sample solution by using Microsoft Visual Studio 2012 or the later version(s). 
@@ -25,10 +25,11 @@ We have two solutions：
 ![get-container-url](images/get-container-url.png)
 4.	Configure necessary parameters about account name, key and address in the solution in file Controllers\AzureBlobController.cs
 ![config-AzureBlobController](images/config-AzureBlobController.png)
+
 ## Running the Sample
 You can upload the sample to your Azure storage, or run at your local IIS, or just debug it in your Visual Studio.
-Using the Code
 
+## Using the Code
 Solution1:
 ```cs
 private void SaveTempFile(HttpPostedFileBase file)
